@@ -69,6 +69,9 @@ import android.webkit.ValueCallback;
 import androidx.core.content.FileProvider;
 // import android.support.v4.app.ActivityCompat;
 
+import android.webkit.SslErrorHandler;
+import android.net.http.SslError;
+
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
@@ -593,6 +596,11 @@ public class CWebViewPlugin extends Fragment {
                 public void onLoadResource(WebView view, String url) {
                     canGoBack = webView.canGoBack();
                     canGoForward = webView.canGoForward();
+                }
+
+                @Override
+                public void onReceivedSslError (WebView view, SslErrorHandler handler, SslError error) {
+                    handler.proceed() ;
                 }
 
                 @Override
