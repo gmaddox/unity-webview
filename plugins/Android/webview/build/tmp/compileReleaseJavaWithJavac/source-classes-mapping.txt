@@ -27,6 +27,8 @@ net/gree/unitywebview/CWebViewPlugin.java
  net.gree.unitywebview.CWebViewPlugin$4$1
  net.gree.unitywebview.CWebViewPlugin$4$2
  net.gree.unitywebview.CWebViewPlugin$4$2$1
+ net.gree.unitywebview.CWebViewPlugin$4$2$2
+ net.gree.unitywebview.CWebViewPlugin$4$2$3
  net.gree.unitywebview.CWebViewPlugin$4$3
  net.gree.unitywebview.CWebViewPlugin$5
  net.gree.unitywebview.CWebViewPlugin$6

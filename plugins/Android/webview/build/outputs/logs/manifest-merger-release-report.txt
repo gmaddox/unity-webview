@@ -1,12 +1,12 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-7:12
-INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-7:12
+ADDED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-6:12
+INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:2:1-6:12
 	package
 		ADDED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:3:7-38
 		INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml
@@ -21,8 +21,6 @@ INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins
 		ADDED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:4:7-30
 		INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml
 		INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml
-	android:networkSecurityConfig
-		ADDED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml:6:7-67
 uses-sdk
 INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /Users/gregorymaddox/Projects/Maddox/unity-webview-gmaddox/plugins/Android/webview/src/main/AndroidManifest.xml

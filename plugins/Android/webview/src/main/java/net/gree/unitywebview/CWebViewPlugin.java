@@ -71,6 +71,8 @@ import androidx.core.content.FileProvider;
 
 import android.webkit.SslErrorHandler;
 import android.net.http.SslError;
+import android.app.AlertDialog;
+import android.content.DialogInterface;
 
 import java.io.File;
 import java.io.FileOutputStream;
@@ -599,8 +601,49 @@ public class CWebViewPlugin extends Fragment {
                 }
 
                 @Override
-                public void onReceivedSslError (WebView view, SslErrorHandler handler, SslError error) {
-                    handler.proceed() ;
+                public void onReceivedSslError (WebView view, final SslErrorHandler handler, SslError error) {        
+                    final AlertDialog.Builder builder = new AlertDialog.Builder(mWebView.getContext());
+                    String message;
+                    switch (error.getPrimaryError()) {
+                        case SslError.SSL_EXPIRED:
+                            message = "The certificate has expired.";
+                            break;
+                        case SslError.SSL_IDMISMATCH:
+                            message = "The certificate Hostname mismatch.";
+                            break;
+                        case SslError.SSL_NOTYETVALID:
+                            message = "The certificate is not yet valid.";
+                            break;
+                        case SslError.SSL_UNTRUSTED:
+                            message = "The certificate authority is not trusted.";
+                            break;
+                        default:
+                            message = "Unknown SSL error.";
+                            break;
+                    }
+                    message += " Do you want to continue anyway?";
+
+                    builder.setTitle("SSL Certificate Error");
+                    builder.setMessage(message);
+                    builder.setPositiveButton("continue", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            handler.proceed();
+                        }
+                    });
+                    builder.setNegativeButton("cancel", new DialogInterface.OnClickListener() {
+                        @Override
+                        public void onClick(DialogInterface dialog, int which) {
+                            handler.cancel();
+                        }
+                    });
+                    if (error.getPrimaryError() != SslError.SSL_IDMISMATCH) {
+                        final AlertDialog dialog = builder.create();
+                        dialog.show();
+                    }
+                    else {
+                        handler.proceed();
+                    }
                 }
 
                 @Override
